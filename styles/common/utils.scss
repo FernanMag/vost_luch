@@ -1,0 +1,13 @@
+@mixin centering() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition() {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
