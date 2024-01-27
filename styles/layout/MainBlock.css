@@ -1,0 +1,182 @@
+.MainBlock {
+  font-family: "Euclid Circular A", sans-serif;
+  width: 100%;
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainBlock .inner {
+  display: flex;
+  flex-direction: row;
+}
+.MainBlock .MainBlockLeft {
+  display: flex;
+  flex-direction: row;
+}
+.MainBlock .MainBlockLeft .sliderArrows {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+}
+.MainBlock .MainBlockRight {
+  display: flex;
+  flex-direction: column;
+}
+.MainBlock .MainBlockFirstBlockInner, .MainBlock .MainBlockSecondBlockInner {
+  padding: 40px 165px 38px 33px;
+}
+.MainBlock .MainBlockFirstBlock {
+  width: 100%;
+  max-width: 487px;
+  border-radius: 20px;
+  background-color: rgba(255, 158, 16, 0.82);
+  backdrop-filter: blur(60px);
+}
+.MainBlock .MainBlockFirstBlock .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 15px;
+  line-height: 120%;
+}
+.MainBlock .MainBlockFirstBlock .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  width: 289px;
+  padding-bottom: 21px;
+  line-height: 150%;
+}
+.MainBlock .MainBlockFirstBlock .button {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(255, 239, 214, 0.2117647059);
+  border-radius: 4px;
+  padding: 12px 14px 12px 16px;
+  width: fit-content;
+  line-height: 140%;
+}
+.MainBlock .MainBlockFirstBlock .icon {
+  width: 146px;
+  height: 62px;
+  position: absolute;
+  left: 300px;
+  bottom: 25px;
+  z-index: 2;
+}
+.MainBlock .MainBlockFirstBlock .icon2 {
+  width: 146px;
+  height: 62px;
+  position: absolute;
+  left: 307px;
+  bottom: 25px;
+  z-index: 1;
+}
+.MainBlock .MainBlockSecondBlock {
+  width: 100%;
+  max-width: 487px;
+  border-radius: 20px;
+  backdrop-filter: blur(60px);
+  margin-top: 33px;
+  background: radial-gradient(#d7f9b6, rgba(241, 250, 232, 0.7411764706));
+}
+.MainBlock .MainBlockSecondBlock .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3F9E43;
+  padding-bottom: 15px;
+  line-height: 120%;
+}
+.MainBlock .MainBlockSecondBlock .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.8);
+  padding-bottom: 21px;
+  line-height: 150%;
+}
+.MainBlock .MainBlockSecondBlock .button {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4CAF50;
+  border-radius: 4px;
+  padding: 12px 14px 12px 16px;
+  width: fit-content;
+  background-color: rgba(101, 152, 134, 0.0784313725);
+  line-height: 140%;
+}
+.MainBlock .MainBlockSecondBlock .icon {
+  width: 142px;
+  height: 120px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 310px;
+  top: 120px;
+}
+.MainBlock .MainBlockSecondBlock .icon2 {
+  width: 69px;
+  height: 58px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 370px;
+  top: 60px;
+}
+.MainBlock .MainBlockSecondBlock .icon3 {
+  width: 38px;
+  height: 32px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 350px;
+  top: 45px;
+}
+.MainBlock .SliderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+.MainBlock .SliderWrapper .SliderImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 20px 20px 0;
+}
+.MainBlock .SliderWrapper .SliderImg {
+  width: 100%;
+  height: 100%;
+}
+.MainBlock .SliderInner {
+  padding: 74px 52px 172px 82px;
+  background-color: #FFF3E3;
+  backdrop-filter: blur(60px);
+  border-radius: 20px 0 0 20px;
+}
+.MainBlock .SliderInner .title {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  width: 386px;
+}
+.MainBlock .SliderInner .text {
+  color: rgba(33, 33, 33, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  margin-top: 25px;
+  margin-bottom: 34px;
+  width: 327px;
+}
+.MainBlock .SliderInner .button {
+  color: #FFA726;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  padding: 15px 35px 13px 35px;
+  border-radius: 4px;
+  background-color: rgba(255, 200, 120, 0.2);
+  width: fit-content;
+}
+
+/*# sourceMappingURL=MainBlock.css.map */
