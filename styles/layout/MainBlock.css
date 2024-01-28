@@ -11,8 +11,9 @@
   flex-direction: row;
 }
 .MainBlock .MainBlockLeft {
-  display: flex;
-  flex-direction: row;
+  max-width: 896px;
+  overflow: hidden;
+  margin-right: 30px;
 }
 .MainBlock .MainBlockLeft .sliderArrows {
   position: absolute;
@@ -23,6 +24,7 @@
 .MainBlock .MainBlockRight {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .MainBlock .MainBlockFirstBlockInner, .MainBlock .MainBlockSecondBlockInner {
   padding: 40px 165px 38px 33px;
@@ -132,19 +134,26 @@
   top: 45px;
 }
 .MainBlock .SliderWrapper {
+  justify-content: flex-start;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+}
+.MainBlock .SliderWrapper .swiper-slide {
+  border-radius: 20px;
 }
 .MainBlock .SliderWrapper .SliderImg img {
-  height: 100%;
-  width: 100%;
   border-radius: 0 20px 20px 0;
 }
-.MainBlock .SliderWrapper .SliderImg {
+.MainBlock .SliderWrapper .swiper-slide {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+}
+.MainBlock .SliderWrapper .swiper-slide img {
   height: 100%;
+  max-height: 564.2px;
+  max-width: 346px;
 }
 .MainBlock .SliderInner {
   padding: 74px 52px 172px 82px;
