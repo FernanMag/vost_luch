@@ -1,6 +1,4 @@
-
-swiper = new Swiper('.MainBlockLeft', {
+swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    spaceBetween: 45,
     loop: true,
 });

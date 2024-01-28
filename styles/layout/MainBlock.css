@@ -1,49 +1,40 @@
 .MainBlock {
-  font-family: "Euclid Circular A", sans-serif;
-  width: 100%;
-  margin-top: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Euclid Circular A", sans-serif;
+  width: 100%;
+  margin-top: 13px;
 }
 .MainBlock .inner {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.MainBlock .MainBlockLeft {
-  max-width: 896px;
-  overflow: hidden;
-  margin-right: 30px;
-}
-.MainBlock .MainBlockLeft .sliderArrows {
-  position: absolute;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 25px;
-}
-.MainBlock .MainBlockRight {
+.MainBlock .RightBlock {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 487px;
 }
-.MainBlock .MainBlockFirstBlockInner, .MainBlock .MainBlockSecondBlockInner {
+.MainBlock .RightBlock .RightBlockFirstInner, .MainBlock .RightBlock .RightBlockSecondInner {
   padding: 40px 165px 38px 33px;
 }
-.MainBlock .MainBlockFirstBlock {
+.MainBlock .RightBlock .RightBlockFirst {
   width: 100%;
   max-width: 487px;
   border-radius: 20px;
   background-color: rgba(255, 158, 16, 0.82);
   backdrop-filter: blur(60px);
 }
-.MainBlock .MainBlockFirstBlock .title {
+.MainBlock .RightBlock .RightBlockFirst .title {
   font-size: 24px;
   font-weight: 600;
   color: white;
   padding-bottom: 15px;
   line-height: 120%;
 }
-.MainBlock .MainBlockFirstBlock .text {
+.MainBlock .RightBlock .RightBlockFirst .text {
   font-size: 16px;
   font-weight: 500;
   color: white;
@@ -51,7 +42,7 @@
   padding-bottom: 21px;
   line-height: 150%;
 }
-.MainBlock .MainBlockFirstBlock .button {
+.MainBlock .RightBlock .RightBlockFirst .button {
   font-size: 15px;
   font-weight: 500;
   color: white;
@@ -61,7 +52,7 @@
   width: fit-content;
   line-height: 140%;
 }
-.MainBlock .MainBlockFirstBlock .icon {
+.MainBlock .RightBlock .RightBlockFirst .icon {
   width: 146px;
   height: 62px;
   position: absolute;
@@ -69,7 +60,7 @@
   bottom: 25px;
   z-index: 2;
 }
-.MainBlock .MainBlockFirstBlock .icon2 {
+.MainBlock .RightBlock .RightBlockFirst .icon2 {
   width: 146px;
   height: 62px;
   position: absolute;
@@ -77,7 +68,7 @@
   bottom: 25px;
   z-index: 1;
 }
-.MainBlock .MainBlockSecondBlock {
+.MainBlock .RightBlock .RightBlockSecond {
   width: 100%;
   max-width: 487px;
   border-radius: 20px;
@@ -85,21 +76,21 @@
   margin-top: 33px;
   background: radial-gradient(#d7f9b6, rgba(241, 250, 232, 0.7411764706));
 }
-.MainBlock .MainBlockSecondBlock .title {
+.MainBlock .RightBlock .RightBlockSecond .title {
   font-size: 24px;
   font-weight: 600;
   color: #3F9E43;
   padding-bottom: 15px;
   line-height: 120%;
 }
-.MainBlock .MainBlockSecondBlock .text {
+.MainBlock .RightBlock .RightBlockSecond .text {
   font-size: 16px;
   font-weight: 500;
   color: rgba(33, 33, 33, 0.8);
   padding-bottom: 21px;
   line-height: 150%;
 }
-.MainBlock .MainBlockSecondBlock .button {
+.MainBlock .RightBlock .RightBlockSecond .button {
   font-size: 15px;
   font-weight: 500;
   color: #4CAF50;
@@ -109,7 +100,7 @@
   background-color: rgba(101, 152, 134, 0.0784313725);
   line-height: 140%;
 }
-.MainBlock .MainBlockSecondBlock .icon {
+.MainBlock .RightBlock .RightBlockSecond .icon {
   width: 142px;
   height: 120px;
   flex-shrink: 0;
@@ -117,7 +108,7 @@
   left: 310px;
   top: 120px;
 }
-.MainBlock .MainBlockSecondBlock .icon2 {
+.MainBlock .RightBlock .RightBlockSecond .icon2 {
   width: 69px;
   height: 58px;
   flex-shrink: 0;
@@ -125,7 +116,7 @@
   left: 370px;
   top: 60px;
 }
-.MainBlock .MainBlockSecondBlock .icon3 {
+.MainBlock .RightBlock .RightBlockSecond .icon3 {
   width: 38px;
   height: 32px;
   flex-shrink: 0;
@@ -133,42 +124,47 @@
   left: 350px;
   top: 45px;
 }
-.MainBlock .SliderWrapper {
-  justify-content: flex-start;
+.MainBlock .LeftBlock {
+  overflow: hidden;
+}
+.MainBlock .LeftBlock .SliderWrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-.MainBlock .SliderWrapper .swiper-slide {
-  border-radius: 20px;
-}
-.MainBlock .SliderWrapper .SliderImg img {
-  border-radius: 0 20px 20px 0;
-}
-.MainBlock .SliderWrapper .swiper-slide {
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  border-radius: 20px;
+  margin-right: 35px;
 }
-.MainBlock .SliderWrapper .swiper-slide img {
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide img {
   height: 100%;
   max-height: 564.2px;
   max-width: 346px;
+  border-radius: 0 20px 20px 0;
 }
-.MainBlock .SliderInner {
-  padding: 74px 52px 172px 82px;
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderImg {
+  width: 100%;
+  max-width: 346px;
+  height: auto;
+}
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner {
+  width: 100%;
+  padding: 74px 42px 172px 72px;
   background-color: #FFF3E3;
   backdrop-filter: blur(60px);
   border-radius: 20px 0 0 20px;
 }
-.MainBlock .SliderInner .title {
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner .title {
   color: #212121;
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
   width: 386px;
 }
-.MainBlock .SliderInner .text {
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner .text {
   color: rgba(33, 33, 33, 0.8);
   font-size: 18px;
   font-weight: 500;
@@ -177,7 +173,7 @@
   margin-bottom: 34px;
   width: 327px;
 }
-.MainBlock .SliderInner .button {
+.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner .button {
   color: #FFA726;
   font-size: 16px;
   font-weight: 500;
