@@ -16,6 +16,7 @@
     @media only screen and (max-width: 1210px) {
       padding-top: 8px;
     }
+    //Медиа запросы не по порядку
     @include utils.centering;
 
     a {
@@ -197,6 +198,7 @@
 
   .two-percent {
     position: relative;
+    //relative?? relative && absolute почитай в чем разница
     @include utils.centering;
     background-color: colors.$greenHeader;
     width: 42px;
@@ -207,8 +209,10 @@
     color: white;
     bottom: 18px;
     left: 62px;
+    //нет падинга
     @media only screen and (max-width: 1210px) {
       display: none;
     }
   }
 }
+//не соблюдена вложенность

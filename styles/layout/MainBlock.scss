@@ -53,7 +53,7 @@
         width: fit-content;
         line-height: 140%;
       }
-
+      //нужен relative элемент, попробуй убрать "backdrop-filter" видимо у него под капотом прописано position: relative. потом расскажу подробнее кароч
       .icon {
         width: 146px;
         height: 62px;
