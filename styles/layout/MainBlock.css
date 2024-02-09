@@ -1,4 +1,4 @@
-.MainBlock {
+.mainBlock {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,35 +6,35 @@
   width: 100%;
   margin-top: 13px;
 }
-.MainBlock .inner {
+.mainBlock .inner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.MainBlock .RightBlock {
+.mainBlock .rightBlock {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 487px;
 }
-.MainBlock .RightBlock .RightBlockFirstInner, .MainBlock .RightBlock .RightBlockSecondInner {
+.mainBlock .rightBlock .rightBlockFirstInner, .mainBlock .rightBlock .rightBlockSecondInner {
   padding: 40px 165px 38px 33px;
 }
-.MainBlock .RightBlock .RightBlockFirst {
+.mainBlock .rightBlock .rightBlockFirst {
   width: 100%;
   max-width: 487px;
   border-radius: 20px;
   background-color: rgba(255, 158, 16, 0.82);
   backdrop-filter: blur(60px);
 }
-.MainBlock .RightBlock .RightBlockFirst .title {
+.mainBlock .rightBlock .rightBlockFirst .title {
   font-size: 24px;
   font-weight: 600;
   color: white;
   padding-bottom: 15px;
   line-height: 120%;
 }
-.MainBlock .RightBlock .RightBlockFirst .text {
+.mainBlock .rightBlock .rightBlockFirst .text {
   font-size: 16px;
   font-weight: 500;
   color: white;
@@ -42,7 +42,7 @@
   padding-bottom: 21px;
   line-height: 150%;
 }
-.MainBlock .RightBlock .RightBlockFirst .button {
+.mainBlock .rightBlock .rightBlockFirst .button {
   font-size: 15px;
   font-weight: 500;
   color: white;
@@ -52,7 +52,7 @@
   width: fit-content;
   line-height: 140%;
 }
-.MainBlock .RightBlock .RightBlockFirst .icon {
+.mainBlock .rightBlock .rightBlockFirst .icon {
   width: 146px;
   height: 62px;
   position: absolute;
@@ -60,7 +60,7 @@
   bottom: 25px;
   z-index: 2;
 }
-.MainBlock .RightBlock .RightBlockFirst .icon2 {
+.mainBlock .rightBlock .rightBlockFirst .icon2 {
   width: 146px;
   height: 62px;
   position: absolute;
@@ -68,7 +68,7 @@
   bottom: 25px;
   z-index: 1;
 }
-.MainBlock .RightBlock .RightBlockSecond {
+.mainBlock .rightBlock .rightBlockSecond {
   width: 100%;
   max-width: 487px;
   border-radius: 20px;
@@ -76,21 +76,21 @@
   margin-top: 33px;
   background: radial-gradient(#d7f9b6, rgba(241, 250, 232, 0.7411764706));
 }
-.MainBlock .RightBlock .RightBlockSecond .title {
+.mainBlock .rightBlock .rightBlockSecond .title {
   font-size: 24px;
   font-weight: 600;
   color: #3F9E43;
   padding-bottom: 15px;
   line-height: 120%;
 }
-.MainBlock .RightBlock .RightBlockSecond .text {
+.mainBlock .rightBlock .rightBlockSecond .text {
   font-size: 16px;
   font-weight: 500;
   color: rgba(33, 33, 33, 0.8);
   padding-bottom: 21px;
   line-height: 150%;
 }
-.MainBlock .RightBlock .RightBlockSecond .button {
+.mainBlock .rightBlock .rightBlockSecond .button {
   font-size: 15px;
   font-weight: 500;
   color: #4CAF50;
@@ -100,7 +100,7 @@
   background-color: rgba(101, 152, 134, 0.0784313725);
   line-height: 140%;
 }
-.MainBlock .RightBlock .RightBlockSecond .icon {
+.mainBlock .rightBlock .rightBlockSecond .icon {
   width: 142px;
   height: 120px;
   flex-shrink: 0;
@@ -108,7 +108,7 @@
   left: 310px;
   top: 120px;
 }
-.MainBlock .RightBlock .RightBlockSecond .icon2 {
+.mainBlock .rightBlock .rightBlockSecond .icon2 {
   width: 69px;
   height: 58px;
   flex-shrink: 0;
@@ -116,7 +116,7 @@
   left: 370px;
   top: 60px;
 }
-.MainBlock .RightBlock .RightBlockSecond .icon3 {
+.mainBlock .rightBlock .rightBlockSecond .icon3 {
   width: 38px;
   height: 32px;
   flex-shrink: 0;
@@ -124,47 +124,95 @@
   left: 350px;
   top: 45px;
 }
-.MainBlock .LeftBlock {
+.mainBlock .leftBlock {
   overflow: hidden;
+  width: 100%;
+  position: relative;
 }
-.MainBlock .LeftBlock .SliderWrapper {
+.mainBlock .leftBlock .sliderButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 467px;
+  left: 75px;
+  z-index: 2;
+}
+.mainBlock .leftBlock .sliderButtons .swiper-button-next {
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid rgba(173, 180, 185, 0.8);
+  border-left: 2px solid rgba(173, 180, 185, 0.8);
+  transform: rotate(-225deg);
+  cursor: pointer;
+}
+.mainBlock .leftBlock .sliderButtons .swiper-button-prev {
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid rgba(173, 180, 185, 0.8);
+  border-left: 2px solid rgba(173, 180, 185, 0.8);
+  transform: rotate(-45deg);
+  cursor: pointer;
+  margin-right: 20px;
+}
+.mainBlock .leftBlock .sliderButtons .swiper-pagination {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: -2px;
+  color: rgba(173, 180, 185, 0.8);
+  padding-right: 25px;
+}
+.mainBlock .leftBlock .sliderButtons .swiper-scrollbar {
+  margin-right: 24px;
+  height: 1px;
+  width: 69px;
+  background-color: rgba(173, 180, 185, 0.8);
   display: flex;
   align-items: center;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide {
+.mainBlock .leftBlock .sliderButtons .swiper-scrollbar-drag {
+  background-color: #FFA726;
+  height: 3px;
+}
+.mainBlock .leftBlock .sliderWrapper {
+  display: flex;
+  align-items: center;
+}
+.mainBlock .leftBlock .sliderWrapper .swiper-slide {
   display: flex;
   border-radius: 20px;
   margin-right: 35px;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide:last-child {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide:last-child {
   margin-right: 0;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide img {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide img {
   height: 100%;
   max-height: 564.2px;
   max-width: 346px;
   border-radius: 0 20px 20px 0;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderImg {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide .sliderImg {
   width: 100%;
   max-width: 346px;
-  height: auto;
+  max-height: 564.2px;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide .sliderInner {
   width: 100%;
   padding: 74px 42px 172px 72px;
   background-color: #FFF3E3;
   backdrop-filter: blur(60px);
   border-radius: 20px 0 0 20px;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner .title {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide .sliderInner .title {
   color: #212121;
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
   width: 386px;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner .text {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide .sliderInner .text {
   color: rgba(33, 33, 33, 0.8);
   font-size: 18px;
   font-weight: 500;
@@ -173,7 +221,7 @@
   margin-bottom: 34px;
   width: 327px;
 }
-.MainBlock .LeftBlock .SliderWrapper .swiper-slide .SliderInner .button {
+.mainBlock .leftBlock .sliderWrapper .swiper-slide .sliderInner .button {
   color: #FFA726;
   font-size: 16px;
   font-weight: 500;

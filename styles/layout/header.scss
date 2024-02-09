@@ -10,13 +10,12 @@
   font-family: 'Euclid Circular A', sans-serif;
 
   .logo {
-    @media only screen and (max-width: 520px) {
-      padding-top: 6px;
-    }
     @media only screen and (max-width: 1210px) {
       padding-top: 8px;
     }
-    //Медиа запросы не по порядку
+    @media only screen and (max-width: 520px) {
+      padding-top: 6px;
+    }
     @include utils.centering;
 
     a {
@@ -40,6 +39,7 @@
   }
 
   .menu {
+    position: relative;
     display: flex;
     align-items: center;
     padding-top: 8px;
@@ -49,7 +49,23 @@
     @media only screen and (max-width: 1210px) {
       display: none;
     }
-
+    .two-percent {
+      position: absolute;
+      @include utils.centering;
+      background-color: colors.$greenHeader;
+      width: 42px;
+      height: 15px;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      margin: 0 auto;
+      bottom: 17px;
+      left: 20px;
+      @media only screen and (max-width: 1210px) {
+        display: none;
+      }
+    }
     a {
       margin-right: 30px;
       @media only screen and (max-width: 1395px) {
@@ -196,23 +212,6 @@
     }
   }
 
-  .two-percent {
-    position: relative;
-    //relative?? relative && absolute почитай в чем разница
-    @include utils.centering;
-    background-color: colors.$greenHeader;
-    width: 42px;
-    height: 15px;
-    border-radius: 14px;
-    font-size: 12px;
-    font-weight: 600;
-    color: white;
-    bottom: 18px;
-    left: 62px;
-    //нет падинга
-    @media only screen and (max-width: 1210px) {
-      display: none;
-    }
+
   }
-}
-//не соблюдена вложенность
+
